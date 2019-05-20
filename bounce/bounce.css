@@ -12,6 +12,7 @@
     background:#c00;
     border-radius:2px;
     transform: rotate(45deg);
+    animation:bounce-box .5s infinite ;
     -webkit-animation:bounce-box .5s infinite ;
 }
 .bounce-box:after{
@@ -24,9 +25,10 @@
     height:3px;
     background:#eaeaea;
     border-radius:100%;
+    animation:shadow .5s infinite ;
     -webkit-animation:shadow .5s infinite ;
 }
-@-webkit-keyframes bounce-box{
+@keyframes bounce-box{
     0%{
         top:50px;
         transform: rotate(90deg); /**/
@@ -47,7 +49,7 @@
         transform: rotate(0deg);
     }
 }
-@-webkit-keyframes shadow{
+@keyframes shadow{
     0%,100%{
       left:54px;
       width:40px;
